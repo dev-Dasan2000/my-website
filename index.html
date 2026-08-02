@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Damindu Fernando | Portfolio</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<header>
+    <div class="container">
+        <h1>Bodiya Baduge Damindu Dharmawijaya Fernando</h1>
+        <p>Information Business Student | Graphic Designer | IT Enthusiast</p>
+
+        <nav>
+            <a href="#about">About</a>
+            <a href="#education">Education</a>
+            <a href="#experience">Experience</a>
+            <a href="#skills">Skills</a>
+            <a href="#contact">Contact</a>
+		<a href="#My Projects"><a href="skills.html" target="_blank">My Projects </a></a>
+
+<button onclick="changeLanguage()"><a href="indexjp.html">日本語 / English</a>
+
+
+   
+</button>
+        </nav>
+    </div>
+</header>
+
+<section class="hero">
+    <img src="images/profile.jpg" alt="Profile">
+
+    <h2>Hello, I'm Damindu Fernando</h2>
+
+    <p>
+        Information Business Student currently studying in Japan.
+        Passionate about Web Development, Business, and Graphic Design.
+    </p>
+
+    <a href="document/cv.xlsx" class="btn">Download CV</a>
+</section>
+
+<section id="about">
+<div class="container">
+<h2>About Me</h2>
+
+<p>
+I am an international student from Sri Lanka studying Information Business
+at Iwatani Gakuen Yokohama IT Business College.
+
+I have experience in Graphic Design, Warehouse Operations,
+Customer Service and Distribution.
+
+I enjoy learning new technologies and improving my IT and Business skills.
+</p>
+
+</div>
+</section>
+
+<section id="education">
+
+<div class="container">
+
+<h2>Education</h2>
+
+<div class="card">
+<h3>Iwatani Gakuen Yokohama IT Business College</h3>
+<p>Information Business (2025 - 2027)</p>
+</div>
+
+<div class="card">
+<h3>Sophia International Academy</h3>
+<p>Japanese Language School (2023 - 2025)</p>
+</div>
+
+<div class="card">
+<h3>INGRIN Printing & Graphics Academy</h3>
+<p>Graphic Design Course (2021)</p>
+</div>
+
+</div>
+
+</section>
+
+<section id="experience">
+
+<div class="container">
+
+<h2>Experience</h2>
+
+<div class="card">
+<h3>Singer Distribution Center</h3>
+<p>Distribution Staff (2019-2023)</p>
+</div>
+
+<div class="card">
+<h3>Yamato Transport</h3>
+<p>Warehouse Staff (2023)</p>
+</div>
+
+<div class="card">
+<h3>Lawson Convenience Store</h3>
+<p>Cashier (2024-2025)</p>
+</div>
+
+<div class="card">
+<h3>FamilyMart Convenience Store</h3>
+<p>Cashier (Since 2025 up to now)</p>
+</div>
+
+
+
+</div>
+
+</section>
+
+<section id="skills">
+
+<div class="container">
+
+<h2>Skills</h2>
+
+<div class="skill">
+<p>HTML</p>
+<div class="bar"><span style="width:95%"></span></div>
+</div>
+
+<div class="skill">
+<p>CSS</p>
+<div class="bar"><span style="width:93%"></span></div>
+</div>
+
+<div class="skill">
+<p>Adobe Photoshop</p>
+<div class="bar"><span style="width:90%"></span></div>
+</div>
+
+<div class="skill">
+<p>Adobe Illustrator</p>
+<div class="bar"><span style="width:85%"></span></div>
+</div>
+
+<div class="skill">
+<p>CoralDrow</p>
+<div class="bar"><span style="width:85%"></span></div>
+</div>
+
+<div class="skill">
+<p>JAVA</p>
+<div class="bar"><span style="width:70%"></span></div>
+</div>
+
+<div class="skill">
+<p>PHP</p>
+<div class="bar"><span style="width:70%"></span></div>
+</div>
+
+<div class="skill">
+<p>DataBase</p>
+<div class="bar"><span style="width:75%"></span></div>
+</div>
+
+</div>
+
+
+</section>
+
+<section id="contact">
+
+<div class="container">
+
+<h2>Contact</h2>
+
+<p>Email : s2537007@yb.iwatani.ac.jp</p>
+<p>Phone : 070-2013-5804</p>
+<p>Location : Yokohama, Japan</p>
+
+</div>
+
+</section>
+
+<h2>Visitors: <span id="count"></span></h2>
+
+<script>
+    // Unique namespace + key (oya site name ekata adala widiyata denna)
+    const url = "https://api.countapi.xyz/hit/mypage123/visitors";
+
+    fetch(url)
+        .then(response => response.json())
+        .then(data => {
+            document.getElementById("count").innerText = data.value;
+        });
+</script>
+
+<footer>
+
+<p>© 2026 Damindu Dharmawijaya Fernando</p>
+
+</footer>
+
+</body>
+</html>
